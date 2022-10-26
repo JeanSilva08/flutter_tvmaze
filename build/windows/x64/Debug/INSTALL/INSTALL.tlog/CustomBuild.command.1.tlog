@@ -1,0 +1,10 @@
+^C:\FLUTTER_TVMAZE\BUILD\WINDOWS\CMAKEFILES\6F0A0862FE8B436FD591EE73CA4309D2\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
